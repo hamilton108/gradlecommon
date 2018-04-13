@@ -1,0 +1,37 @@
+
+ext {
+    springVersion = '4.2.3.RELEASE'
+    htmlunitVersion = '2.29'
+    junitVersion = '4.12'
+    log4jVersion = '1.2.17'
+    aspectjVersion = '1.8.13'
+    //mybatisVersion = '3.4.5'
+    mybatisVersion = '3.4.2'
+    mongoVersion = '3.4.2'
+    postgresVersion = '42.0.0'
+    coltVersion = '1.2.0'
+    args4jVersion = '2.33'
+    commonsLangVersion = '20030203.000129'
+    tagsoupVersion = '1.2.1'
+    mailVersion = '1.4.7'
+    cglibVersion = '3.2.5'
+    quartzVersion = '2.3.0'
+    slf4jVersion = '1.7.10'
+
+    //-------------------- SCP ---------------------
+    antJschVersion = '1.10.1'
+    jschVersion = '0.1.54'
+
+
+    //-------------------- clojure ---------------------
+    clojureVersion = '1.8.0'
+    clojureContribVersion = '1.2.0'
+    algoMonadsVersion = '0.1.5'
+    clojuresqueVersion = '1.5.8'
+    numericTowerVersion = '0.0.4'
+    jsonVersion = '0.5.3'
+    ringVersion = '1.6.0-RC1'
+    selmerVersion = '1.10.6'
+    compojureVersion = '1.5.2'
+    mongerVersion = '3.1.0'
+}
