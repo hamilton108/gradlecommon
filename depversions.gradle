@@ -23,6 +23,9 @@ ext {
     jschVersion = '0.1.54'
 
 
+    //-------------------- Jetty ---------------------
+    jettyVersion = '9.4.9.v20180320'
+
     //-------------------- clojure ---------------------
     clojureVersion = '1.8.0'
     clojureContribVersion = '1.2.0'
