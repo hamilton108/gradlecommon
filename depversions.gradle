@@ -18,6 +18,7 @@ ext {
     cglibVersion = '3.2.5'
     quartzVersion = '2.3.0'
     slf4jVersion = '1.7.10'
+    jsoupVersion = '1.11.3'
 
     //-------------------- SCP ---------------------
     antJschVersion = '1.10.1'
