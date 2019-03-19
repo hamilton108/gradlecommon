@@ -5,4 +5,5 @@ ext {
     mockitoVersion = '2.25.1'
     htmlUnitVersion = '2.34.1'
     jsoupVersion = '1.11.3'
+    slf4jVersion = '1.7.25'
 }
