@@ -4,4 +4,5 @@ ext {
     jupiterVersion = '5.2.0'
     mockitoVersion = '2.25.1'
     htmlUnitVersion = '2.34.1'
+    jsoupVersion = '1.11.3'
 }
