@@ -1,6 +1,7 @@
 
 ext {
     springVersion = '5.1.5.RELEASE'
+    //springVersion = '4.3.22.RELEASE'
     htmlunitVersion = '2.31'
     junitVersion = '4.12'
     jupiterVersion = '5.2.0'
