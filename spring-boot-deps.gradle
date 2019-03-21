@@ -6,4 +6,5 @@ ext {
     htmlUnitVersion = '2.34.1'
     jsoupVersion = '1.11.3'
     slf4jVersion = '1.7.25'
+    coltVersion = '1.2.0'
 }
