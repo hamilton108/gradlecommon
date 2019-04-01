@@ -1,5 +1,11 @@
 
 ext {
+    cucumberVersion = '4.2.6'
+    gherkinVersion = '5.1.0'
+    cucumberJava = "io.cucumber:cucumber-java:$cucumberVersion"
+    cucumberCore = "io.cucumber:cucumber-core:$cucumberVersion"
+    gherkin = "io.cucumber:gherkin:$gherkinVersion"
+    //gherkinVersion = '6.0.14'
     springVersion = '5.1.5.RELEASE'
     //springVersion = '4.3.22.RELEASE'
     htmlunitVersion = '2.31'
@@ -46,5 +52,5 @@ ext {
 
     jacksonVersion = '2.9.5'
     mockitoVersion = '2.24.0'
-    assertjVersion = '3.11.1'
+    assertj = 'org.assertj:assertj-core:3.12.2'
 }
