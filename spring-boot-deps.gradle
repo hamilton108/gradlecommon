@@ -10,4 +10,5 @@ ext {
     quartzVersion = '2.3.0'
     args4jVersion = '2.33'
     mailVersion = '1.4.7'
+    aspectjVersion = '1.9.3'
 }
