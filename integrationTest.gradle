@@ -33,34 +33,21 @@ sourceSets {
     }
 }
 
-dependencies {
-    integrationTestCompile sourceSets.main.output
-    integrationTestCompile sourceSets.test.output 
-
-    integrationTestCompile configurations.compile
-    integrationTestCompile configurations.testCompile 
-
-    integrationTestRuntime configurations.runtime
-    integrationTestRuntime configurations.testRuntime 
+idea {
+    module {
+        testSourceDirs += sourceSets.integrationTest.java.srcDirs
+        testResourceDirs += sourceSets.integrationTest.resources.srcDirs
+        scopes.TEST.plus += [ configurations.integrationTestCompile ]
+    }
 }
 
 task integrationTest(type: Test) {
-    group = LifecycleBasePlugin.VERIFICATION_GROUP
-    description = 'Runs the integration tests.' 
-
-    maxHeapSize = '1024m' 
-
-    testClassesDir = sourceSets.integrationTest.output.classesDir
-    classpath = sourceSets.integrationTest.runtimeClasspath 
-
-    binResultsDir = file("$buildDir/integration-test-results/binary/integrationTest")
-
-    reports { 
-        html.destination = "$buildDir/reports/integration-test"
-        junitXml.destination = "$buildDir/integration-test-results"
-    }
-
-    mustRunAfter tasks.test 
+    description = 'Runs the integration tests.'
+    group = 'verification'
+    testClassesDirs = sourceSets.integrationTest.output.classesDirs
+    classpath = sourceSets.integrationTest.runtimeClasspath
+    outputs.upToDateWhen { false }
+    mustRunAfter test
 }
 
 check.dependsOn integrationTest 
