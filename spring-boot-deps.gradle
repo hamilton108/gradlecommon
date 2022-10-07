@@ -4,7 +4,7 @@ ext {
     jupiterVersion = '5.2.0'
     mockitoVersion = '2.25.1'
     htmlUnitVersion = '2.44.0'
-    jsoupVersion = '1.11.3'
+    jsoupVersion = '1.15.3'
     slf4jVersion = '1.7.25'
     coltVersion = '1.2.0'
     quartzVersion = '2.3.0'
